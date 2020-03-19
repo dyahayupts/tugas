@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    .maincontainer {
+        width: 649px;
+        height: 452px;
+        background-color: cadetblue;
+        border:1px solid rgb(4, 62, 65) ;
+        position: relative;
+    }
+
+    .upcontainer{
+        width: 648px;
+        height: 214px;
+        border:1px solid maroon ;
+        background-color: snow;
+
+    }
+
+    .middlecontainer{
+        width: 648px;
+        height: 132px;
+        border:1px solid maroon ;
+        background-color: mistyrose;
+        /* bottom: 0px; */
+    }
+
+    .downcontainer{
+        width: 648px;
+        height: 100px;
+        border:1px solid maroon ;
+        background-color: mistyrose;
+        /* bottom: 0px; */
+    }
+
+    .box1{
+        background-color: snow;
+        margin: 5px 5px 5px 5px ;
+        width: 150px;
+        height: 120px;
+        float: left;
+        text-align: center;
+        border:1px solid;
+    }
+
+    .resetbutton{
+        width: 636px;
+        height: 88px;
+        border:1px solid;
+        margin: 5px 5px 5px 5px ;
+        float: left;
+        background-color: darkgrey;
+    }
+    /* .box2{
+        background-color: snow;
+        margin: 5px 5px 5px 5px ;
+        width: 150px;
+        height: 120px;
+        float: left;
+        text-align: center;
+        border:1px solid olive ;
+    }
+    .box3{
+        background-color: snow;
+        margin: 5px 5px 5px 5px ;
+        width: 150px;
+        height: 120px;
+        float: left;
+        text-align: center;
+        border:1px solid tomato ;
+    }
+    .box4{
+        background-color:snow;
+        margin: 5px 5px 5px 5px ;
+        width: 150px;
+        height: 120px;
+        float: left;
+        text-align: center;
+        border:1px solid blue;
+    } */
+
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <div class="maincontainer">
+        <div id="screen" class="upcontainer"></div>
+
+        <div class="middlecontainer">
+            <div class = "box1" onclick="button1()" style="border-color: brown;"></div>
+            <div class = "box1" onclick="button2()" style="border-color: olive;"></div>
+            <div class = "box1" onclick="button3()" style="border-color: black;"></div>
+            <div class = "box1" onclick="button4()" style="border-color: goldenrod;"></div>
+        </div>
+
+        <div id="reset" class="downcontainer">
+            <div class = "resetbutton" onclick="reset_button()" style="border-color: black;"></div>
+        </div>
+    </div>
+
+    <script>
+
+        function button1(){
+            document.getElementById('screen').style.backgroundColor="brown";
+        }
+
+        function button2(){
+            document.getElementById('screen').style.backgroundColor="olive";
+        }
+
+        function button3(){
+            document.getElementById('screen').style.backgroundColor="palegreen";
+        }
+
+        function button4(){
+            document.getElementById('screen').style.backgroundColor="goldenrod";
+        }
+
+        function reset_button(){
+            document.getElementById('screen').style.backgroundColor="snow";
+        }
+
+
+    </script>
+    
+</body>
+</html>

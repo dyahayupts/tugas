@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <div class="mode" style="text-align:center;"> 
+        <button type="button" onclick="change_to_dark()"> Night Mode</button> <br><br>
+        <button type="button" onclick="change_to_light()"> Day Mode</button>
+    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+<style>
+
+    .container {
+        width: 800px;
+        height: 2000px;
+        /* background: #42455a; */
+        border:2px solid black;
+        margin: auto;
+        position: relative;
+    }
+
+    .judul {
+        width: 800px;
+        height: 110px;
+        padding: 10px;
+        text-align: center;
+        box-sizing: border-box;
+        border:2px solid black;
+        text-shadow: 2px 3px gray;
+    }
+
+    .kotak{
+        width: 280px;
+        height: 80px;
+        opacity: 0.2;
+        background-color: lightgreen;
+        position: absolute;
+        top:auto;
+        left: 60px;
+    }
+
+    .menu {
+        width: 800px;
+        height: 60px;
+        padding: 20px 20px;
+        box-sizing: border-box;
+        border: 2px solid black;
+        text-align: start;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: indianred;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+
+    .menu a:hover {
+        background-color: gray;
+        color: white;
+        padding: 20px 20px;
+    }
+
+    .banner {
+        width: 800px;
+        height: 400px;
+        box-sizing: border-box;
+        background-color: rosybrown;
+    }
+
+    .banner img{
+        width: 800px;
+        height: 400px;
+    }
+
+    .artikel {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .konten {
+        padding: 20px 20px 20px 20px;
+        text-align: justify;
+    }
+
+    .logo img {
+        width:42px;
+        float: left;
+        padding-top: 25px;
+        position: relative;
+
+    }
+
+    .konten img{
+        width: 250px;
+        height: 250px;
+        float: left;
+        padding: 20px 20px;
+    }
+
+    .gallery{
+        background-color: goldenrod;
+        margin: 5px 5px 5px 5px ;
+        width: 190px;
+        height: 130px;
+        float: right;
+        text-align: center;
+        background-size: cover;
+        background-image: url(img/vokasiub.jpeg);
+    }
+
+    .ribbon{
+        width: 128px;
+        height: 128px;
+        position: absolute;
+        background-image: url(img/twt.png);
+        left: 688px;
+        top: -13px;
+    }
+
+    .mode{
+        width: 160px;
+        height: 100px;
+        border-radius: 20px;
+        background-color: goldenrod;
+        float: right;
+        position: fixed;
+        right: 10px;
+        padding-top: 35px;
+    }
+
+    .pojokbawah1{
+        width: 160px;
+        height: 100px;
+        border-radius: 20px;
+        background-color: goldenrod;
+
+    }
+
+    .pojokbawah2{
+        width: 160px;
+        height: 100px;
+        border-radius: 20px;
+        background-color: lightcoral;
+
+    }
+
+   
+
+
+</style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="ribbon"></div>
+    
+        <div class="judul">
+            <div class="kotak"> <h1>WEBSITE SAYA</h1> </div>
+                <div class="logo">
+                    <img src = "../img/internet.png">
+                </div>
+        </div>
+
+        <div class="menu">
+            <a href = "#">Home</a>
+            <a href = "#">About</a>
+            <a href = "#">Contact</a>
+        </div>
+
+        <div class="banner">
+            <img src = "../Img/header.jpeg">
+        </div>
+
+        <div class="artikel">
+            <h2>Judul Artikel</h2>
+            <h3>Ditulis Oleh : Suratmono</h3>
+        </div>
+
+        <div id="konten" class="konten">
+            <img src = "img/vokasiub.jpeg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna 
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit 
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+                occaecat cupidatat non proident, sunt in culpa qui officia 
+                deserunt mollit anim id est laborum. </p>  
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit 
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+                    occaecat cupidatat non proident, sunt in culpa qui officia 
+                    deserunt mollit anim id est laborum. </p>  
+        </div>
+
+        <div class = gallery>
+            1
+        </div>
+        <div class = gallery>
+            2
+        </div>
+        <div class = gallery>
+            3
+        </div>
+        <div class = gallery>
+            4
+        </div>
+        <div class = gallery>
+            5
+        </div>
+        <div class = gallery>
+            6
+        </div>
+        <div class = gallery>
+            7
+        </div>
+        <div class = gallery>
+            8
+        </div>
+
+        
+        
+
+    </div>
+
+    <script>
+
+        function change_to_dark(){
+        document.getElementById('konten').style.backgroundColor="black";
+        document.getElementById('konten').style.color="white";
+        }
+
+        function change_to_light(){
+        document.getElementById('konten').style.backgroundColor="yellow";
+        document.getElementById('konten').style.color="black";
+        }
+
+        function perlakuan1(){
+        document.getElementById('pojok').className="pojokbawah2";
+        }
+
+        function perlakuan2(){
+        document.getElementById('pojok').className="pojokbawah1";
+        }
+        
+
+    </script>
+    
+</body>
+
+<!-- <div id="pojok" class="pojokbawah1" onclick="perlakuan1()" ondblclick="perlakuan2()"></div> -->
+<div id="pojok" class="pojokbawah1" onmouseup="perlakuan1()" onmousedown="perlakuan2()"></div>
+<!-- gagal cok!!! -->
+</html>

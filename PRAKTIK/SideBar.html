@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<style>
+    .sidebar1{
+        width: 200px;
+        height: 100%;
+        background-color: palevioletred;
+        position: fixed;
+        transition: width 2s;
+        top: 0px;
+        left: 0px;
+    }
+
+    .main1{
+        width: 700px;
+        height: 500px;
+        margin-left: 200px;
+        top: 0px;
+        left: 0px;
+    }
+
+    .sidebar{
+        width: 0px;
+        height: 100%;
+        background-color: palevioletred;
+        position: fixed;
+        overflow: auto;
+        transition: width 2s;
+        top: 0px;
+        left: 0px;
+    }
+
+    .main{
+        /* width: 700px;
+        height: 500px; */
+        margin-left: 0px;
+        top: 0px;
+        left: 0px;
+        
+    }
+
+    /* .sidebar span{
+        float: right;
+    } */
+
+</style>
+
+<script>
+
+    function openNav(){
+        document.getElementById("panelkiri").className="sidebar1";
+        document.getElementById("panelutama").className="main1"
+    }
+
+    function closeNav(){
+        document.getElementById("panelkiri").className="sidebar";
+        document.getElementById("panelutama").className="main"
+    }
+</script>
+
+</head>
+<body>
+    <div class="sidebar" id="panelkiri">
+
+        <span style="font-size:30px; cursor:pointer; float: right;" onclick="closeNav()">X</span>
+        <ul>
+            <li>Home</li>
+            <li>Profil</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+
+        <div class="main" id="panelutama">
+            <span style="font-size:30px; cursor:pointer" onclick="openNav()">&#9776;</span>
+            <h1>Ini Konten Utama</h1>
+        </div>
+
+    
+</body>
+</html>

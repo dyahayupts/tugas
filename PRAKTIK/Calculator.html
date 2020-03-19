@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <style>
+        .container {
+            width: 500px;
+            height: 400px;
+            background-color: silver;
+            border:2px transparent;
+            margin: auto;
+            position: relative;
+        }
+    
+        .judul{
+            width: 500px;
+            height: 100px;
+            text-align: center;
+            color: black;
+            opacity: 75%;
+            font-family: monospace;
+            font-size: large;
+            padding-top: 5px;
+        }
+    
+        .kolom1{
+            width: 300px;
+            height: 50px;
+            background-color:black;
+            opacity: 50%;
+            justify-content: center;
+            margin: auto;
+            border-radius: 20px;
+        }
+    
+        .angka1{
+            width: 150px;
+            height: 35px;
+            padding-top: 15px;
+            padding-right: 20px;
+            text-align: center ;
+            margin: auto;
+            
+        }
+    
+        .kolom2{
+            width: 300px;
+            height: 50px;
+            background-color:black;
+            opacity: 50%;
+            justify-content: center;
+            margin: auto;
+            border-radius: 20px;
+        }
+    
+        .angka2{
+            width: 150px;
+            height: 35px;
+            padding-top: 15px;
+            padding-right: 20px;
+            text-align: center ;
+            margin: auto;
+        }
+    
+        .tambah{
+            width: 500px;
+            height: 30px;
+            background-color: whitesmoke;
+            text-align: center;
+            margin: auto;
+            padding-top: 7px;
+            
+        }
+
+        .hasil{
+            width: 500px;
+            height: 40px;
+            text-align: center;
+        }
+    
+    </style>
+
+    <script>
+        function add(){
+        var bilangan1 = document.getElementById("bil1").value;
+        var bilangan2 = document.getElementById("bil2").value;
+
+        var angka1 = Number(bilangan1);
+        var angka2 = Number(bilangan2);
+        
+        var hasil = angka1 + angka2;
+
+        document.getElementById("hasiltext").innerHTML = hasil;
+        }
+
+        function minus(){
+        var bilangan1 = document.getElementById("bil1").value;
+        var bilangan2 = document.getElementById("bil2").value;
+
+        var angka1 = Number(bilangan1);
+        var angka2 = Number(bilangan2);
+        
+        var hasil = angka1- angka2;
+
+        document.getElementById("hasiltext").innerHTML = hasil;
+        }
+
+        function dev(){
+        var bilangan1 = document.getElementById("bil1").value;
+        var bilangan2 = document.getElementById("bil2").value;
+
+        var angka1 = Number(bilangan1);
+        var angka2 = Number(bilangan2);
+        
+        var hasil = angka1 / angka2;
+
+        document.getElementById("hasiltext").innerHTML = hasil;
+        }
+
+        function time(){
+        var bilangan1 = document.getElementById("bil1").value;
+        var bilangan2 = document.getElementById("bil2").value;
+
+        var angka1 = Number(bilangan1);
+        var angka2 = Number(bilangan2);
+        
+        var hasil = angka1* angka2;
+
+        document.getElementById("hasiltext").innerHTML = hasil;
+        }
+
+    </script>
+
+
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="judul">
+        <h1>Kalkulator Javascript</h1>
+        </div>
+
+        <div class="kolom1" >
+            <div class="angka1">
+                <input type="text" id="bil1">
+            </div>
+        </div>
+<br><br>
+        <div class="kolom2" >
+            <div class="angka2">
+                <input type="text" id="bil2">
+            </div>
+        </div>
+        <br><br><br>
+        <div class="tambah">
+            <input type="button" onclick="add()" value="Tambah"></input>
+            <input type="button" onclick="minus()" value="Kurang"></input>
+            <input type="button" onclick="dev()" value="  Bagi  "></input>
+            <input type="button" onclick="time()" value="  Kali  "></input>
+        </div>
+
+        <div class=hasil>
+            <h2 id="hasiltext"><b></b></h2>
+        </div>
+    </div>
+    
+</body>
+</html>
